@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8" />
+<link href="survey.css" type="style" rel="stylesheet">
+</head>
+<body>
+  <form id="survey-form">
+    <h1 id="title"> Your feedback is valuable</h1>
+    <p id="description"> Let move to the survey</p> 
+    <div class="row">
+      <div >
+      <label for="Name" id="name-label">Name</label>
+      </div>
+      <div class="enter">
+        <input type="Text" id="name" placeholder="Enter name" required>
+      </div>
+    </div>
+    <div class="row">
+      <div >
+        <label for="email" id="email-label">Email</label>
+    </div>
+      <div class="enter">
+      <input type="email"id="email"placeholder="Enter email" required>
+        </div>
+    </div>
+    <div class="row">
+      <div >
+      <label for="Number" id="number-label">Number</label>
+      </div>
+      <div class="enter">
+        <input type="number" id="number"placeholder="Enter number"  max="9999999999" min="1000000000"required>
+      </div>
+    </div>
+   <div class="row">
+
+  <div id="options-label">
+  <label for="select"> Choose your region<label>
+    </div>
+    <div>
+      <select id="dropdown">
+    <option>Kerala</option>
+    <option>Tamil Nadu</option>
+    <option>Andhra Pradesh</option>
+    <option>Karnataka</option>
+    <option>Telangana</option>
+        <option>Pudduchery</option>
+      </select>
+     </div>    
+    <div class="row">
+      <input type="radio" name="consumer" value="cust-type">Customer</input></div>
+    <div><input type="radio"name="consumer" value="cust-type">Producer</input></div>
+<div><input type="radio" name="consumer" value="cust-type">Retailer</input></div>
+
+<div id="check1">
+    <ol>
+
+    <li>
+    <input type="checkbox" value="box">Need email updates about our new products and services.</input><br>
+    <input type="checkbox" value="box">Need message updates about our new products and services.</input><br>
+    <input type="checkbox" value="box">I abide by the rules and regulations of the company.</input><br>
+    </li>
+
+    </ol>
+</div>
+
+<div>
+  <textarea placeholder="Type your message here...."></textarea>
+</div>
+
+<input type="Submit"id="submit"onclick="phoneno()">
+    </form>
+  
+</body>
+</html>
